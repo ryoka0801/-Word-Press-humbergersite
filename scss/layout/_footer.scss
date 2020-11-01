@@ -1,0 +1,13 @@
+footer {
+  text-align: center;
+  background-color: #A6907C;
+  height: 14rem;
+  color: white;
+  @include breakpoint( pc ) {
+    grid-row: 3/4;
+    grid-column: 1/3;
+  }
+}
+.flex p a {
+  color: white;
+}

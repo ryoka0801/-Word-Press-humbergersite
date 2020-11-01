@@ -1,0 +1,53 @@
+.main-ttl {
+  position: relative;
+  width: 100%;
+  height: 27rem;
+  @include breakpoint( tablet ) {
+    height: 38rem;
+  }
+  @include breakpoint( pc ) {
+    height: 50rem;
+  }
+  .wp-post-image {
+    height: 100%;
+    width: 100%;
+  }
+}
+.archive-ttl {
+  position: relative;
+  width: 100%;
+}
+
+
+.c-site-ttl {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: white;
+  font-weight: lighter;
+  @include breakpoint( tablet ) {
+    display: flex;
+    align-items: center;
+  }
+  @include breakpoint( pc ) {
+    display: flex;
+  }
+  a {
+    color: white;
+  }
+  a:last-child {
+    font-size: 1.6rem;
+  }
+}
+
+.c-site-ttl-bg {
+  width: 100%;
+  height: 28.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  object-fit: cover;
+  @include breakpoint( pc ) {
+  height: 53rem;
+  }
+}

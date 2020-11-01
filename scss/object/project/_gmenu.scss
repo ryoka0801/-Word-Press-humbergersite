@@ -1,0 +1,137 @@
+// X方向固定
+body {
+	overflow-x: hidden;
+}
+
+// メニューボタン
+.is-hamburger {
+	color: $gray;
+	font-size: 3.4rem;
+}
+
+// サイドバー 文字色
+.menu-item a {
+	color: $gray;
+}
+
+#menu-item-64:first-child {
+	font-size: 3.4rem;
+}
+
+section#nav_menu-2 {
+	position: absolute;
+	right: 100%;
+	height: 100%;
+	background-color: $skincolor;
+	transition: all 300ms 0s ease;
+	overflow-y: auto;
+	@include breakpoint( pc ) {
+		position: static;
+		right: 0%;
+	}
+}
+
+.is-open {
+	right: 0%!important;
+	z-index: 10000;
+	position: fixed;
+	top: 0;
+}
+
+.p-gmenu--bt {
+	@include breakpoint( pc ) {
+		display: none;
+	}
+}
+
+// PCメニュータイトル
+.widget-title {
+	display: none;
+	@include breakpoint( pc ) {
+		display: block;
+		padding: 5rem 0 9rem 3rem;
+		color : #707070;
+	}
+}
+
+// 商品
+.menu-menu-container {
+	margin: 3rem;
+	overflow-y: auto;
+	height: 100%;
+	@include breakpoint( pc ) {
+		overflow-y: visible;
+		height: auto;
+	}
+}
+
+.menu {
+	@include breakpoint( tablet ) {
+		margin: 21.7rem 0 0 0;
+	}
+	@include breakpoint( pc ) {
+		margin: 0;
+	}
+}
+
+.menu > li {
+	margin: 4rem 0 0 0;
+	@include breakpoint( pc ) {
+		margin: 9.2rem 0 0 4.6rem;
+	}
+}
+
+.sub-menu {
+	padding: 4.5rem 0 0 2rem;
+	color: $gray;
+	li {
+		margin: 0 0 3rem 0;
+	}
+}
+
+// 背景固定
+.overflowhidden {
+	overflow: scroll;
+	position: relative;
+}
+.overflowhidden::before {
+	content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+	background-color: #707070;
+	z-index: 100;
+}
+
+// バツ印
+.my-parts {
+  display: none;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	cursor: pointer;
+	z-index: 100000;
+}
+.is-closed {
+	display: block!important;
+}
+.my-parts span::before,
+.my-parts span::after {
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 84%;
+	height: 16%;
+	margin: -8% 0 0 -42%;
+	background: #707070;
+}
+.my-parts span::before {
+	transform: rotate(-45deg);
+}
+.my-parts span::after {
+	transform: rotate(45deg);
+}

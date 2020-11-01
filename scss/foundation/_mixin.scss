@@ -1,0 +1,23 @@
+@mixin breakpoint( $point ) {
+	// ブラウザサイズ641pxより大きい時
+	@if $point == tablet {
+		@media ( min-width: 641px ) {
+			@content ;
+		}
+	}
+	// ブラウザサイズ769pxより大きい時
+	@if $point == pc {
+		@media ( min-width: 769px ) {
+			@content ;
+		}
+	}
+	// ブラウザサイズ961pxより大きい時
+	@if $point == wide {
+		@media ( min-width: 961px ) {
+			@content ;
+		}
+	}
+}
+
+$gray: #707070;
+$skincolor: #F2EDE9;

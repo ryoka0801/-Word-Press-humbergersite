@@ -1,0 +1,7 @@
+main {
+  background-color: white;
+  @include breakpoint( pc ) {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+}

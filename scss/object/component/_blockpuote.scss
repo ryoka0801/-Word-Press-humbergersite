@@ -1,0 +1,47 @@
+blockquote.wp-block-quote {
+  background: #F5F5F5;
+  padding: 3rem 1.6rem 3.1rem 2rem;
+  @include breakpoint( pc ) {
+  line-height: 2rem;
+  padding: 2rem;
+  }
+  p {
+    font-size: 1.6rem;
+    padding: 0;
+    @include breakpoint( pc ) {
+    font-size: 1.6rem;
+    padding-bottom: 6.2rem;
+    }
+  }
+}
+
+cite {
+  margin: 3rem 0 0 0;
+}
+
+.wp-block-image {
+  margin: 3rem 0;
+  @include breakpoint( pc ) {
+    margin: 6rem 0;
+  }
+}
+figure.wp-block-media-text__media {
+  @include breakpoint( pc ) {
+    height: 100%;  
+  }
+}
+p.has-text-align-center.has-normal-font-size {
+  @include breakpoint( pc ) {
+    padding-bottom: 0;    
+  }
+}
+p.has-text-align-center.has-normal-font-size {
+  @include breakpoint( pc ) {
+    padding-bottom: 0;   
+  }
+}
+.wp-block-media-text.alignwide.is-stacked-on-mobile {
+  @include breakpoint( pc ) {
+    margin-bottom: 6rem;  
+  }
+}
